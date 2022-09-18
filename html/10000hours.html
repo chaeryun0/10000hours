@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="css/10000hours.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>1만 시간의 법칙</title>
+</head>
+<body>
+
+  <!-- 헤더 -->
+    <header id="header">
+      <h1 class="title">
+        <img class="title-img" src="img/title.png" alt="1만 시간의 법칙">
+        <img class="clock-img" src="img/clock.png" alt="">
+      </h1>
+    </header>
+  <!-- main : 1만 시간의 법칙에 대한 설명 -->
+  <main>
+    <section class="description">
+      <h2 class="blind">1만 시간의 법칙에 대한 설명</h2>
+      <blockquote class="sub-title">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</blockquote>
+
+      <div class="quotes">
+        <img class="quotes-img" src="img/quotes.png" alt="">  
+      </div>
+
+      <p class="description-txt"> 
+        <strong>1만 시간의 법칙</strong>은<br> 
+        어떤 분야의 전문가가 되기 위해서는<br>
+        최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+      </p>
+    </section>
+
+    <!-- main : 사용자 입력 폼 --> 
+    <section class="contents">
+      <h2 class="blind">어떤 분야의 전문가가 되고 싶은지 그리고 목표하는 하루 훈련 시간을 입력하는 폼</h2>
+      
+      <form class="user-input">
+        <p class="user-input__field">
+          나는
+          <input id="field-input" type="text" placeholder="예) 프로그래밍" autocomplete="off" required>
+          전문가가 될것이다
+        </p>
+        <p class="user-input__time">
+          그래서 앞으로 매일 하루에
+          <input id="time-input" type="number" placeholder="예) 5" min="1" max="24" autocomplete="off" required>
+            시간씩 훈련할 것이다.
+        </p>
+        <div class="contents__btn-wrap">
+          <button id="contents__result" type="button">
+            나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+          </button>
+          <img class="click-img" src="img/click.png" alt="클릭하기">
+        </div>
+
+      </form>
+    </section>
+
+    <!-- main : 결과 확인 섹션 -->
+    <section id="result-modal" class="result-modal">
+      <h2 class="blind">결과 확인하기</h2>
+      
+        <div class="result-txt__wrap">
+          <p class="result-txt">
+            당신은<strong id="field-output"></strong>전문가가 되기 위해서
+          </p>
+          <p class="result-time">
+            대략<strong id="time-output"></strong>일 이상 훈련하셔야 합니다! :)
+          </p>
+        </div>
+
+        <div class="result-btn-wrap">
+          <button id="go-btn" type="button">훈련하러 가기 GO! GO!</button>
+          <button id="share-btn" type="button">공유하기</button>
+        </div>
+      </section>
+
+    <!-- main : 결과 로딩 섹션 -->
+    <section id="result-loading" class="result-loading">
+      <img class="loading-img" src="img/loading.png" alt="로딩 중">
+    </section>
+
+  </main>
+  
+    <!-- footer : 저작권 안내 -->
+  <footer class="footer">
+    <h2 class="blind">저작권 안내</h2>
+
+    <img class="weniv-logo" src="img/logo.png" alt="주식회사 위니브">
+    <small class="copyright">
+      ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다. <br>
+      수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+    </small>
+  </footer>
+
+  <!-- 응원 모달창 섹션 -->
+    <section id="msg-modal">
+      <h2 class="blind">응원 팝업창</h2>
+      
+      <div class="msg-modal__wrap">
+        <div class="cheerup">
+          <strong>화이팅!!♥♥♥</strong> 
+          <p>당신의 꿈을 응원합니다!</p>
+        </div>
+
+        <img class="licat-img" src="img/licat.png" alt="응원하는 라이캣">
+          <button id="close-btn" type="button">
+          종료하고 진짜 훈련하러 가기 GO!GO!</button>
+          <p>(그냥 닫기 버튼입니다.)</p>
+      </div>
+    </section>
+
+  <script type="text/javascript" src="js/10000hours.js"></script> 
+</body>
+</html>
