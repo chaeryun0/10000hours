@@ -23,7 +23,7 @@
 ## ⚙️ 구현 페이지
 
 사이트 동작 화면
-------|
+----------|
 | ![ezgif com-gif-maker](https://user-images.githubusercontent.com/112460430/190890222-9e5a50ec-a3fc-4992-b27b-e04d358c98b2.gif) |
  
 [1만 시간의 법칙 보러가기](https://chaeryun0.github.io/10000hours/html/10000hours.html)
